@@ -1,5 +1,12 @@
 # programming-jargons
 
+## Table of Content
+- [Vibe Coding](#vibe-coding)
+- [Scaffolding](#scaffolding)
+
+## Vibe Coding:
+Coined by AI researcher *_Andrej Karpathy_* in early 2025. It is a way of building software where you `fully give in to the vibes` and let AI handle the implementation. Instead of writing syntax line-by-line, you describe your vision in natural language, iterate based on what "feels" right, and essentially treat the underlying code as a steerable draft that you don't necessarily need to read or fully understand.
+
 ## Scaffolding: 
 Process of quickly generating the boilerplate folder structure, manifest files, and initial source code for a project.
 
