@@ -43,5 +43,7 @@ SemVer uses a three-part format:
 > MAJOR.MINOR.PATCH
 
 **MAJOR**: When you make breaking changes (incompatible API changes). Existing code might break.
+
 **MINOR**: When you add functionality in a backward-compatible manner. New features are available, but your old code still works.
+
 **PATCH**: When you make backward-compatible bug fixes. No new features, just stability and security improvements.
