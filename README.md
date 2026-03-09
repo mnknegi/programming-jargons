@@ -36,8 +36,8 @@ Xcode will then generate multiple files, folders, and protocols based on that "v
 ## Domain Specific Language
 A DSL is essentially a "mini-language" designed to solve a very specific problem. **SwiftUI**, which is a Domain-Specific Language built right on top of Swift. Similarly, in the context of a `Package.swift` file (the manifest for a Swift Package), saying that `PackageDescription` is Apple's DSL means that you are using a specialized "mini-language" to describe your project's structure, but that mini-language is written entirely using standard Swift syntax.
 
-## Semantic Versioning(SemVer)
-Standard convention for naming software versions so that developers and users know exactly what kind of changes are in a new release just by looking at the numbers.
+## Semantic Versioning
+Also known as SemVer is a standard convention for naming software versions so that developers and users know exactly what kind of changes are in a new release just by looking at the numbers.
 
 SemVer uses a three-part format:
 > MAJOR.MINOR.PATCH
