@@ -5,6 +5,7 @@
 - [Scaffolding](#scaffolding)
 - [Domain Specific Language](#domain-specific-language)
 - [Semantic Versioning](#semantic-versioning)
+- [Two Case Enum](#two-case-enum)
 
 ## Vibe Coding:
 Coined by AI researcher *_Andrej Karpathy_* in early 2025. It is a way of building software where you `fully give in to the vibes` and let AI handle the implementation. Instead of writing syntax line-by-line, you describe your vision in natural language, iterate based on what "feels" right, and essentially treat the underlying code as a steerable draft that you don't necessarily need to read or fully understand.
@@ -47,3 +48,30 @@ SemVer uses a three-part format:
 **MINOR**: When you add functionality in a backward-compatible manner. New features are available, but your old code still works.
 
 **PATCH**: When you make backward-compatible bug fixes. No new features, just stability and security improvements.
+
+## Two Case Enum
+In Swift, a two-case enum is a simple but powerful pattern used to represent a choice between exactly two mutually exclusive states.
+
+While a Bool (true/false) can also represent two states, a two-case enum is preferred when you want to provide semantic meaning (clearer names) and type safety.
+
+**Example 1**
+```
+enum Result<Success, Failure: Error> {
+    case success(Success)
+    case failure(Failure)
+}
+```
+
+**Example 2**
+```
+enum LayoutType {
+    case list
+    case grid
+}
+
+// In your ViewModel
+@Published var currentLayout: LayoutType = .list
+
+// In your SwiftUI View
+Image(systemName: currentLayout == .list ? "square.grid.2x2" : "list.bullet")
+```
